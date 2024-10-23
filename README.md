@@ -1,6 +1,18 @@
 ## CreateJsonStructure
 
-This is a tool useful for creating JSON structure for data gathering. It is useful when trying to read off-chain data in solidity, or when building data for merkle trees, it is very useful when trying to efficiently handle data. 
+This is a tool useful for creating data using JSON structure and format.
+
+## Why use it
+
+- For data gathering which can be stored in a merkle tree for efficient hashing and storage in a test environment.
+
+- For building immutable dynamic data, stored in strings efficiently without consuming storage space, such that it can be read for verification of data passed into a contract.
+
+- For building and managing NFT metadata associated with an ERC721 token such that reliance on an external centralized system is removed. 
+
+- For easier integration with off-chain services that expects or handles data in this format.
+
+- For dynamic data storage and management.
 
 ## Requirements
 
@@ -23,7 +35,7 @@ forge install PaulElisha/CreateJsonStructure
 
 To every 'start' method, ensure you close them with the required functions.
 
-## Usage
+## How to use
 
 - Create a target file in your script folder. In this case, I used this path: "script/target/input.json"
 - Assign the target file to a variable like this: `string private constant INPUT_PATH = "script/target/input.json"`;
